@@ -139,12 +139,6 @@
         grid-column: 2 / 3;
         grid-row: 2 / 3;
     }
-
-    p{
-        @include m.tablet{
-            display: none;
-        }
-    }
 }
 
 .plans-radio{
@@ -155,5 +149,11 @@
         font-size: 2rem;
         display: flex;
         gap: 2rem;
+    }
+}
+
+.text_form{
+    @include m.tablet{
+        display: none;
     }
 }

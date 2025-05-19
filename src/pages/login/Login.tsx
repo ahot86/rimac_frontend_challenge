@@ -25,7 +25,7 @@ export function Login(){
                         <p>Tú eliges cuánto pagar. Ingresa tus datos, cotiza y recibe nuestra asesoría. 100% online.</p>
                     </div>
                     <div className="login-form-hero__form">
-                        <p>Tú eliges cuánto pagar. Ingresa tus datos, cotiza y recibe nuestra asesoría. 100% online.</p>
+                        <p className="text_form">Tú eliges cuánto pagar. Ingresa tus datos, cotiza y recibe nuestra asesoría. 100% online.</p>
                         <component.Form/>
                     </div>                    
                 </div>                
