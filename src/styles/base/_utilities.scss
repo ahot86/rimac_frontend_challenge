@@ -1,0 +1,9 @@
+@use 'variables' as v;
+
+.text-cente {
+    text-align: center;
+}
+
+.bg-primary {
+    background-color: v.$background-color;
+}

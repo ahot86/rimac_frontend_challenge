@@ -1,0 +1,28 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.footer-container{
+    background-color: v.$primary-color;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;    
+    color: v.$white;
+    padding-block: 3rem;
+    @include m.tablet{
+        flex-direction: row;
+    }
+
+    &__logo{
+        width: 8.5rem;
+    }
+
+    &__info{
+        color: v.$white;
+        font-size: 1.4rem;
+    }
+}

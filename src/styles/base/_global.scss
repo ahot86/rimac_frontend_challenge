@@ -1,0 +1,61 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: v.$font-family;
+    line-height: v.$line-height;
+    background-color: v.$background-color;
+    height: 100%;
+    margin: 0;  
+}
+
+p{
+    color: v.$primary-color;
+    font-size: v.$font-size;
+}
+
+.container{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+
+    @include m.tablet{
+        padding: 0 3.2rem;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    margin: 0 0 v.$gap 0;
+}
+
+h1{
+    font-size: 3.4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.6rem;
+}
